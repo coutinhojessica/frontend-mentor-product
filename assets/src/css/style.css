@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(243, 234, 227);
+}
+
+.conteiner{
+    display: flex;
+    flex-direction: row;
+    width: 542px;
+    height: 407px;
+}
+
+.conteiner .conteiner-img img{
+    width: 270px;
+    height: 407px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.conteiner .conteiner-descricao-produto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 270px;
+    height: 407px;
+    row-gap: 30px;
+    background-color: hsl(0, 0%, 100%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 15px;
+}
+
+.conteiner .conteiner-descricao-produto h2{
+    letter-spacing: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: medium;
+}
+
+.conteiner .conteiner-descricao-produto h1{
+    width: 175px;
+    height: 83px;
+    font-weight: 900;
+    font-size: 28px;
+    font-family: 'Fraunces', serif;
+}
+
+.conteiner .conteiner-descricao-produto p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.conteiner .conteiner-descricao-produto .preco{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.conteiner .conteiner-descricao-produto .preco .valor-novo{
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+    color: hsl(158, 36%, 37%);
+}
+
+.conteiner .conteiner-descricao-produto .valor-antigo{
+    font-size: small;
+    text-decoration: line-through;
+}
+
+.conteiner .conteiner-descricao-produto button{
+    font-family: 'Fraunces', serif;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    cursor: pointer;
+    width: 213px;
+    height: 42px;
+    border-radius: 10px;
+    margin: 0px auto;
+}
+
+footer{
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: 50px;
+}
+
+footer a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 200px) and (max-width: 599px){
+    body{
+        height: 100vh;
+    }
+
+    .conteiner{
+        height: 90vh;        
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .conteiner .conteiner-descricao-produto{
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+     }
+
+    .conteiner .conteiner-img img{
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+    footer{
+        padding: 20px 0px;
+    }
+
+}
